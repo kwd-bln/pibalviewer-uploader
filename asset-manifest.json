@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pibalviewer-uploader/static/css/main.a689ad72.chunk.css",
+    "main.js": "/pibalviewer-uploader/static/js/main.a5fafa87.chunk.js",
+    "main.js.map": "/pibalviewer-uploader/static/js/main.a5fafa87.chunk.js.map",
+    "runtime-main.js": "/pibalviewer-uploader/static/js/runtime-main.3c78b4ba.js",
+    "runtime-main.js.map": "/pibalviewer-uploader/static/js/runtime-main.3c78b4ba.js.map",
+    "static/js/2.11546838.chunk.js": "/pibalviewer-uploader/static/js/2.11546838.chunk.js",
+    "static/js/2.11546838.chunk.js.map": "/pibalviewer-uploader/static/js/2.11546838.chunk.js.map",
+    "index.html": "/pibalviewer-uploader/index.html",
+    "precache-manifest.da4d607e54971b5f02d4623d7165cb40.js": "/pibalviewer-uploader/precache-manifest.da4d607e54971b5f02d4623d7165cb40.js",
+    "service-worker.js": "/pibalviewer-uploader/service-worker.js",
+    "static/css/main.a689ad72.chunk.css.map": "/pibalviewer-uploader/static/css/main.a689ad72.chunk.css.map",
+    "static/js/2.11546838.chunk.js.LICENSE.txt": "/pibalviewer-uploader/static/js/2.11546838.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/pibalviewer-uploader/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c78b4ba.js",
+    "static/js/2.11546838.chunk.js",
+    "static/css/main.a689ad72.chunk.css",
+    "static/js/main.a5fafa87.chunk.js"
+  ]
+}
