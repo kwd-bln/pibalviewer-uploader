@@ -2,6 +2,7 @@
   "name": "pibalviewer-uploader",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kwd-bln.github.io/pibalviewer-uploader/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -21,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.5"
+    "@types/react-router-dom": "^5.1.5",
+    "gh-pages": "^3.1.0"
   }
 }
