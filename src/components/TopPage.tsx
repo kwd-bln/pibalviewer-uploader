@@ -106,7 +106,7 @@ class TopPage extends React.Component<Props, State> {
             </table>
           </div>
         </div>
-        <div style={{width: '100%', margin: '20px'}}>
+        <div style={{width: '100%', marginTop: '20px'}}>
           <a href="#" onClick={() => this.handleClickButton()} className="btn-square">
             Send!
           </a>
