@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20b1eb7a6d0f98a040e8c421f1cb081a",
+    "revision": "3123ba0abc6c902855c031079577a213",
     "url": "/pibalviewer-uploader/index.html"
   },
   {
-    "revision": "fc8104464bc81f291a19",
+    "revision": "e8bb0db48b828875aa8c",
     "url": "/pibalviewer-uploader/static/css/main.da11da98.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pibalviewer-uploader/static/js/2.98b78f44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fc8104464bc81f291a19",
-    "url": "/pibalviewer-uploader/static/js/main.8cbf237e.chunk.js"
+    "revision": "e8bb0db48b828875aa8c",
+    "url": "/pibalviewer-uploader/static/js/main.99c30c91.chunk.js"
   },
   {
     "revision": "8b73debd827dc72674e2",
