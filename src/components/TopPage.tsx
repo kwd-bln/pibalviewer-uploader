@@ -25,7 +25,6 @@ class TopPage extends React.Component<Props, State> {
 
   handleChangeSubject(event: React.FormEvent<HTMLInputElement>) {
     const newDate = parseSubject(event.currentTarget.value)
-    console.log(newDate)
     if (newDate) {
       this.setState({subject: event.currentTarget.value, date: newDate, isMorning: newDate.getHours() < 12 })
     } else {
@@ -35,7 +34,6 @@ class TopPage extends React.Component<Props, State> {
 
   handleChangeBody(event: React.ChangeEvent<HTMLTextAreaElement>) {
     const newWinds = parseBody(event.currentTarget.value)
-    console.log(newWinds)
     this.setState({body: event.currentTarget.value, winds: newWinds});
   }
 
@@ -50,7 +48,6 @@ class TopPage extends React.Component<Props, State> {
     }
 
     let confrimText = "パイバルデータを送信します。よろしいですか？"
-    console.log(this.state.subject)
     if (this.state.subject === "") {
       confrimText = "件名が未入力です。\n現在時刻を使用して" + confrimText
     }
@@ -91,7 +88,6 @@ class TopPage extends React.Component<Props, State> {
               </thead>
               {
                 this.state.winds.reverse().map((wind, i) => {
-                  console.log(wind)
                   return (
                     <tbody key={'wind-'+i}>
                       <tr>
