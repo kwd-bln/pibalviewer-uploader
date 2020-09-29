@@ -1,6 +1,7 @@
 import React from "react";
 import TextareaAutosize from 'react-textarea-autosize';
 import { parseSubject, parseBody, Wind } from '../utils/parser'
+import getKey from '../utils/key'
 
 interface Props {}
 interface State {
@@ -47,14 +48,48 @@ class TopPage extends React.Component<Props, State> {
       return
     }
 
-    let confrimText = "パイバルデータを送信します。よろしいですか？"
+    if (this.state.winds.length >= 40) {
+      window.alert('データが多すぎます。')
+      return
+    }
+
+    let confrimText = "パイバルデータを送信します\nパスキーを入力してください。"
     if (this.state.subject === "") {
       confrimText = "件名が未入力です。\n現在時刻を使用して" + confrimText
     }
-    const res = window.confirm(confrimText)
+    const res = window.prompt(confrimText, "")
+    const key = getKey()
 
-    if (res) {
+    if (res === key) {
+      const headers = {
+        "Content-Type": "application/json"
+      }
 
+      const bodyObj = {
+        date: this.state.date,
+        winds: this.state.winds
+      }
+      
+      fetch('https://oval-silicon-280513.an.r.appspot.com/manual-post', {
+        method: 'POST',
+        headers,
+        mode: "cors",
+        body: JSON.stringify(bodyObj)
+      }).then(res => res.text())
+        .then(text => {
+          if (text === 'POST obj is saved correctly') {
+            window.alert("アップロードが完了しました")
+            this.setState({
+              subject: "",
+              body: "",
+              date: new Date(),
+              isMorning: true,
+              winds: []
+            })
+          }
+        })
+    } else {
+      window.alert('キャンセルされました');
     }
   }
    
