@@ -103,7 +103,7 @@ class TopPage extends React.Component<Props, State> {
           <input type="text" value={this.state.subject} placeholder={subjectPlaceholder} onChange={e => this.handleChangeSubject(e)} className='mail-input' />
           <div>
             <input className='small-input' value={this.state.date.getFullYear()} onChange={e => this.handleChangeSmallInput(e, 0)}/> / 
-            <input className='small-input' value={this.state.date.getMonth()} onChange={e => this.handleChangeSmallInput(e, 1)}/> / 
+            <input className='small-input' value={this.state.date.getMonth() + 1} onChange={e => this.handleChangeSmallInput(e, 1)}/> / 
             <input className='small-input' value={this.state.date.getDate()} onChange={e => this.handleChangeSmallInput(e, 2)}/>　
             <input className='small-input' value={this.state.date.getHours()} onChange={e => this.handleChangeSmallInput(e, 3)}/> : 
             <input className='small-input' value={this.state.date.getMinutes()} onChange={e => this.handleChangeSmallInput(e, 4)}/>
