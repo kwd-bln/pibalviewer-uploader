@@ -2,7 +2,7 @@
 export function parseSubject(subject: string): Date | null {
   // 件名からparse
   const monthList = ['Jan', 'Feb', 'Mar' , 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-  let pattern = /(\d{1,2}):(\d{1,2})[]+(\d{1,2})(st|nd|rd|th)/
+  let pattern = /(\d{1,2}):(\d{1,2})[^\d]+(\d{1,2})(st|nd|rd|th)/
   let match = subject.match(pattern)
   if (!match) {
     console.log('this does not include time and date')
