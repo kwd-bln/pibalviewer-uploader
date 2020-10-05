@@ -66,7 +66,7 @@ class TopPage extends React.Component<Props, State> {
       }
 
       const bodyObj = {
-        date: this.state.date,
+        date: this.state.date.toLocaleString(),
         winds: this.state.winds
       }
       
